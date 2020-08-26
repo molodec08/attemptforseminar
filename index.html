@@ -16,11 +16,76 @@
         
         <div class="content">
             <div class="table-wrapper">
+                <div class="btn-tabs">
+                    <button class="btn add">
+                        Добавить
+                    </button>
+                    <button class="btn add">
+                        Изменить
+                    </button>
+                    <button class="btn add">
+                        Удалить
+                    </button>
+                </div>
                 <table class="cases">
                     
                 </table>
             </div>
         </div>
     </div>
+
+    <div class="modal hide">
+		<div class="modal__block">
+			<h2 class="modal__header">Добавить запись</h2>
+			<div class="modal__content">
+				<form class="modal__submit">
+
+                    <label>
+						<span>Номер случая:</span>
+						<input name="numberItem" type="number" required>
+                    </label>
+                    
+                    <label>
+						<span>Вид случая:</span>
+						<select name="typeCase">
+							<option value="1">Поликлинический</option>
+                            <option value="2">Госпитализации</option>
+                            <option value="3">Скорой помощи</option>
+						</select>
+					</label>
+                    
+                    <label>
+						<span>Дата открытия:</span>
+						<input name="openDate" type="date" required>
+                    </label>
+                    
+                    <label>
+						<span>Дата закрытия:</span>
+						<input name="closeDate" type="date" required>
+					</label>
+
+					<label>
+						<span>Пациент:</span>
+						<input name="nameItem" type="text" required>
+                    </label>					
+
+					<label>
+						<span>Дата рождения:</span>
+						<input name="birthDate" type="date" required>
+					</label>
+
+
+					<label>
+						<span>Комментаий:</span>
+						<textarea name="descriptionItem" maxlength="3000" required></textarea>
+					</label>
+					<div class="modal__btn-block">
+						<button class="btn modal__btn-submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+			<button class="modal__close">Х</button>
+		</div>
+	</div>
 </body>
 </html>

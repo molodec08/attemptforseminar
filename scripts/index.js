@@ -33,6 +33,7 @@ const renderTable = (options, data) => {
 const createFilters = () => {
     return `
 <div class="filters">
+    <div class="filter-tabs">
     <label for="casetype">Тип случая:</label>
     <select class="filter case-type" name="casetype" id="casetype">
         <option label=" " value=""></option>
@@ -45,6 +46,7 @@ const createFilters = () => {
 
     <button class="button do-filter">Применить фильтры</button>
     <button class="button cancel-filter">Сбросить фильтры</button>
+    </div>
 </div>
 `;
 }
